@@ -148,14 +148,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/Space.loader.js'
+                    unityLoader.src = 'Build/SpaceOdessy.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/Space.data',
-                                frameworkUrl: 'Build/Space.framework.js',
-                                codeUrl: 'Build/Space.wasm',
+                                dataUrl: 'Build/SpaceOdessy.data',
+                                frameworkUrl: 'Build/SpaceOdessy.framework.js',
+                                codeUrl: 'Build/SpaceOdessy.wasm',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'SpaceBattle',
